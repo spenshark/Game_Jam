@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Item
   - Moodang
+  - Money
   layers:
   - Default
   - TransparentFX

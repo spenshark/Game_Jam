@@ -12,6 +12,7 @@ public class MainButton_sion : MonoBehaviour
 
     public void StartButton()
     {
+        PlayerPrefs.DeleteAll(); //플레이어 프리팹 초기화
         Debug.Log("Push Start");
         SceneManager.LoadScene("StageSelect");
     }

@@ -11,6 +11,7 @@ public class PushStageButton : MonoBehaviour
     public void PushStage()
     {
         Debug.Log("Push stage"+ buttonIndex);
+        PlayerPrefs.SetInt("levelReached", buttonIndex);
         SceneManager.LoadScene(buttonIndex);
     }
 
