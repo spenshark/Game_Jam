@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
 
     public void HpDown()
     {
-        if (hp >= 1)
+        if (hp > 1)
             hp--;
         else
         {

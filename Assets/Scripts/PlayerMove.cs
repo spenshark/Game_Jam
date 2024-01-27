@@ -26,7 +26,7 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         // มกวม
-        if (Input.GetButtonUp("Jump") && !isJumping) { 
+        if (Input.GetButtonDown("Jump") && !isJumping) { 
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             isJumping = true;
         }
