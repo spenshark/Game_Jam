@@ -23,15 +23,27 @@ public class Wave_hit : MonoBehaviour
     {
         if (rigid.velocity.x < maxSpeed * (-1))
             rigid.velocity = new Vector2(maxSpeed * (-1), rigid.velocity.y);
+
+        if (transform.position.y < -2f)
+        {
+            DestroyWave();
+        }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void DestroyWave()
     {
-        
-        if(collision.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("파도랑 부딪힘");
-            // Physics2D.IgnoreCollision(GetComponent<Collider2D>(), collision.collider);
-        }
+        // 파괴 전에 사용할 로직 추가
+
+        // 파괴 전에 Rigidbody2D를 사용하지 않도록 중지
+        rigid.velocity = Vector2.zero;
+        rigid.angularVelocity = 0f;
+
+        // 파괴
+        Destroy(gameObject);
+    }
+
+    void OnDestroy()
+    {
+        rigid = null;
     }
 }

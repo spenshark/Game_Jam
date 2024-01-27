@@ -170,6 +170,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flySpeed: 5
+  itemPrefab: {fileID: 0}
+  itemSpawnInterval: 2
 --- !u!95 &52234316
 Animator:
   serializedVersion: 5
@@ -1073,6 +1075,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &194535296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 194535297}
+  m_Layer: 0
+  m_Name: SpawnLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &194535297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194535296}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.72, y: 1.36, z: 0.06632472}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &236614760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,6 +1153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flySpeed: 5
+  itemPrefab: {fileID: 0}
+  itemSpawnInterval: 2
 --- !u!95 &236614763
 Animator:
   serializedVersion: 5
@@ -1921,7 +1956,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1263001823}
+  - {fileID: 1972489658}
   - {fileID: 836614143}
   - {fileID: 1548521441}
   - {fileID: 1557836197}
@@ -4781,11 +4816,11 @@ Transform:
   m_GameObject: {fileID: 1263001818}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.49, y: 1.81, z: 0.05}
+  m_LocalPosition: {x: 10.73, y: 2.41, z: 0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 630338946}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1263001824
 MonoBehaviour:
@@ -5005,6 +5040,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flySpeed: 5
+  itemPrefab: {fileID: 0}
+  itemSpawnInterval: 2
 --- !u!95 &1423426353
 Animator:
   serializedVersion: 5
@@ -5539,6 +5576,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flySpeed: 5
+  itemPrefab: {fileID: 1548521439}
+  itemSpawnInterval: 2
 --- !u!1 &1619999330
 GameObject:
   m_ObjectHideFlags: 0
@@ -5805,6 +5844,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flySpeed: 5
+  itemPrefab: {fileID: 0}
+  itemSpawnInterval: 2
 --- !u!95 &1709968667
 Animator:
   serializedVersion: 5
@@ -6900,6 +6941,53 @@ Transform:
   - {fileID: 1709968665}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1972489657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1972489658}
+  - component: {fileID: 1972489659}
+  m_Layer: 0
+  m_Name: Spanwner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1972489658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972489657}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.36, y: 5.86, z: 0.06632472}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 630338946}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1972489659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972489657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a54dfdd936ee745b69e9b9887c368f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mobPrefab: {fileID: 1263001818}
+  spawnInterval: 1
+  spawnPoint: {fileID: 194535297}
 --- !u!1 &2068699457
 GameObject:
   m_ObjectHideFlags: 0
@@ -7042,3 +7130,5 @@ SceneRoots:
   - {fileID: 1425975791}
   - {fileID: 1918964456}
   - {fileID: 1260405816}
+  - {fileID: 194535297}
+  - {fileID: 1263001823}

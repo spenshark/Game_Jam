@@ -51,13 +51,14 @@ public class GameManager : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player") { 
             if(hp > 1)
             {
                 PlayerReposition();
             }
 
             HpDown();
+        }
     }
 
     void PlayerReposition()
