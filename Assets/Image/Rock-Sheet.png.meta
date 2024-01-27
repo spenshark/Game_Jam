@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4ce9e486a01f54244bb220ef0de79776
+guid: b927f94d65992c54cb6b66bc1cb1a3eb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,17 +43,17 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -134,106 +134,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: WalkMan-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 12
-        width: 72
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84b74b1f354ecb045b8b222109122af3
-      internalID: -1383405422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WalkMan-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 156
-        y: 12
-        width: 72
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b82a2360962f6f419c6d1bc8bb18c39
-      internalID: 1751299892
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WalkMan-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 284
-        y: 12
-        width: 72
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c1086f477fb12846a091ad738fed44c
-      internalID: -28296761
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WalkMan-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 412
-        y: 12
-        width: 72
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0dff57b308f75d14ca13bada59c31027
-      internalID: -745958439
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    outline: []
+    sprites: []
+    outline:
+    - - {x: -55, y: -30}
+      - {x: -64, y: -52}
+      - {x: -64, y: -64}
+      - {x: 63, y: -64}
+      - {x: 60, y: -29}
+      - {x: 47, y: 13}
+      - {x: 29, y: 36}
+      - {x: 13, y: 3}
+      - {x: -11, y: 59}
+      - {x: -42, y: -1}
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      WalkMan-Sheet_0: -1383405422
-      WalkMan-Sheet_1: 1751299892
-      WalkMan-Sheet_2: -28296761
-      WalkMan-Sheet_3: -745958439
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
